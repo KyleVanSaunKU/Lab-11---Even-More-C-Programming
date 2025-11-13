@@ -5,8 +5,6 @@
 // this function automatically allocates data for our size because we run out of Data FAST so we'll have to use this ALOT
 void Matrix::allocateData(int newSize)
 {
-
-    
     // store the new size first
     size = newSize; // no need to call "this" since the compiler already recognizes size
 
@@ -446,4 +444,5 @@ Matrix updateElementByValue(Matrix matrix, int rowIndex, int columnIndex, int ne
     matrix.setElement(rowIndex, columnIndex, newValue);
 
     return matrix;
+
 }
